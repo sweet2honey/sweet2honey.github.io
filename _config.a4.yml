@@ -140,13 +140,13 @@ lightgallery:
 # 评论插件：需要根据教程自行部署评论服务
 # ---------------------------------------------------------------------------------------
 comment:
-  enable: false
+  enable: true
   use: waline # values: waline、twikoo、giscus、artalk
 
   # Waline
   # See: https://waline.js.org/guide/get-started.html
   waline:
-    serverUrl: # Waline server url(vercel) example: https://example.example.com
+    serverUrl: https://blog-comment-five-lilac.vercel.app/ # Waline server url(vercel) example: https://example.example.com
     lang: zh-CN # Waline language, default: zh-CN. See: https://waline.js.org/guide/client/i18n.html
     placeholder: 留下你的评论吧。 # 评论框背景信息
 
