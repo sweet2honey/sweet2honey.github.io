@@ -2,10 +2,9 @@
 title: 传参也要讲究基本法
 mathjax: false
 categories:
-  - programming
+  - design
 tags:
   - parameter
-  - coding
 date: 2025-02-19 11:13:18
 ---
 
