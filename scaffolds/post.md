@@ -3,7 +3,9 @@ title: {{ title }}
 date: {{ date }}
 mathjax: false
 categories:
-    programming
+    - programming
+    - deep learning
+    - work
 tags:
-    cpp
+    - cpp
 ---

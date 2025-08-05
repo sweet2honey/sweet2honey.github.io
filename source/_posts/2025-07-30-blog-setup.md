@@ -3,10 +3,10 @@ title: blog_setup
 date: 2025-07-30 17:30:00
 mathjax: true
 categories:
-- meme
+    - moo
 tags:
-- blog
-- setup
+    - blog
+    - setup
 ---
 
 # Image

@@ -3,11 +3,10 @@ title: linkage example
 mathjax: false
 date: 2024-12-03 16:49:42
 categories:
-    programming
+    - programming
 tags:
-    cpp
-    compiler
-    linkage
+    - compiler
+    - linkage
 ---
 Compile with:<br/>
 `clang++ var.cpp main.cpp`
