@@ -19,4 +19,4 @@ Make every day count.
 ### Categories
 - [programming](categories/programming)：关于写代码的，语法、编程技巧
 - [design](categories/design)：关于设计的，比如架构、API
-- [work](categories/work)：工作日常的思考和碎碎念
+- [watercooler](categories/watercooler)：饮水机杂谈，工作日常的思考和碎碎念

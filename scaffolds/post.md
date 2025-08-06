@@ -5,7 +5,7 @@ mathjax: false
 categories:
     - programming
     - deep learning
-    - work
+    - watercooler
 tags:
     - cpp
 ---
