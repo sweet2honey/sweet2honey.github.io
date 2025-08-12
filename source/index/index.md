@@ -13,7 +13,6 @@ Make every day count.
 - Machine Learning
 
 ### Featuring
-我觉得写得还不错的：
 - [🌟设计的要素 Elements of Design](2024/11/30/elements-of-design)
 
 ### Categories

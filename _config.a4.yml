@@ -99,7 +99,7 @@ listInfo:
 
 # 你可能会用到的 https://ninojay.top/2023/website-cdn/
 cdn:
-  enable: false # 如果你修改了 css/js ，也许需要把cdn设置为false才会生效
+  enable: true # 如果你修改了 css/js ，也许需要把cdn设置为false才会生效
   choose: zzko # zzko | aliyun | unpkg| jsdelivr  # 都调整为利于国内的cdn，建议使用默认的 zzko 即可
   # 因为是免费CDN，所以有挂的风险，一旦发现网站样式出现原来没有的问题，请尝试关闭CDN
 

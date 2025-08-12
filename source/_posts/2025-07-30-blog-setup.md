@@ -1,18 +1,17 @@
 ---
-title: blog_setup
+title: blog setup
 date: 2025-07-30 17:30:00
 mathjax: true
 categories:
-    - moo
+    - blog
 tags:
     - blog
-    - setup
 ---
 
 # Image
 This is photo loading test:
 
-![someip](someip.png)
+![someip](2025-07-30-blog-setup/someip.png)
 
 # Math
 
