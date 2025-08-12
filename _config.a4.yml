@@ -25,6 +25,8 @@ index: # 首页相关配置
     - "Tomorrow is a mystery"
     - "NOW is the only reality"
     - "There are good days and there are bad days"
+    - "Keep spreading love"
+    - "Comparison is the thief of joy"
     # ...
   hitokoto: false # 一言：调用网络语句展示的接口
   footer: Email:sweet2honey@qq.com # 除了可以填写任何文字外，可以自动邮箱链接化，但需按照这个格式填写：Email:xxx@gmail.com
