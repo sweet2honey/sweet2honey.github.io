@@ -70,6 +70,9 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  "machine learning": machine-learning
+  "deep learning": deep-learning
+  "game developing": game-developing
 tag_map:
   "c++": cpp
   "C++": cpp

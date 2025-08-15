@@ -2,10 +2,10 @@
 title: Lambda vs Bind
 mathjax: false
 categories:
-  - programming
+    - programming
 tags:
-  - cpp
-  - lambda
+    - cpp
+    - lambda
 date: 2025-04-16 01:00
 ---
 

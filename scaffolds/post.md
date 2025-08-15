@@ -4,8 +4,10 @@ date: {{ date }}
 mathjax: false
 categories:
     - programming
-    - deep learning
     - watercooler
+    - machine-learning
+    - deep-learning
+    - game-developing
 tags:
     - cpp
 ---
