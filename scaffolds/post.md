@@ -2,6 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 mathjax: false
+toc: true
 categories:
     - programming
     - watercooler
@@ -10,4 +11,6 @@ categories:
     - game-developing
 tags:
     - cpp
+description:
+    
 ---

@@ -1,11 +1,14 @@
 ---
 title: 白话机器学习的数学 - 2 Regression
 mathjax: true
+toc: true
 categories:
   - machine-learning
 tags:
   - ml
 date: 2025-08-15 14:53:23
+description:
+	回归入门：最小二乘法，多项式回归和随机梯度下降。
 ---
 
 # 最小二乘法

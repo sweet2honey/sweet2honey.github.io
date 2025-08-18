@@ -1,6 +1,7 @@
 ---
 title: Elements of Design
 mathjax: false
+toc: true
 categories:
     - design
 tags:

@@ -1,6 +1,7 @@
 ---
 title: Lambda vs Bind
 mathjax: false
+toc: true
 categories:
     - programming
 tags:
