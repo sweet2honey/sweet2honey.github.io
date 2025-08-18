@@ -8,7 +8,7 @@ tags:
   - ml
 date: 2025-08-15 14:53:23
 description:
-	回归入门：最小二乘法，多项式回归和随机梯度下降。
+	回归入门：最小二乘法，多项式回归、多重回归和随机梯度下降。
 ---
 
 # 最小二乘法
@@ -42,7 +42,7 @@ $\eta$ 是称为学习率的正常数，影响收敛速度，甚至可能导致�
 
 ---
 
-$f_{\theta}(x)$ 是关于 $\theta_0$，$\theta_1$ 的双变量函数，所以要用偏微分：
+$f_{\theta}(x)$ 是关于 $\theta_0$，$\theta_1$ 的双变量函数，所以不能用普通的微分 $\frac{d}{dx}$，要用偏微分：
 $$
 \theta_0 := \theta_0 - \eta\frac{\partial E}{\partial\theta_0}
 $$
@@ -50,23 +50,24 @@ $$
 \theta_1 := \theta_1 - \eta\frac{\partial E}{\partial\theta_1}
 $$
 
-发现 $E(\theta)$ 不是对 $\theta$ 的直接函数，可以考虑使用**复合函数**的微分法则，假设：
+发现 $u(\theta)$ 不是对 $\theta$ 的直接函数，可以考虑使用**复合函数**的微分法则，假设：
 $$
-E=E(\theta)
-$$
-$$
+\begin{align*}
+u=E(\theta)
+\\\\
 v=f_\theta(x)
+\end{align*}
 $$
 则有：
 $$
-\frac{\partial E}{\partial \theta _{0}} = \frac{\partial E}{\partial v} \cdot \frac{\partial v}{\partial \theta _{0}}
+\frac{\partial u}{\partial \theta _{i}} = \frac{\partial u}{\partial v} \cdot \frac{\partial v}{\partial \theta _{i}}
 $$
 
----
+先求第一部分的导数：
 
 $$
 \begin{align*}
-	\frac{\partial E}{\partial v}
+	\frac{\partial u}{\partial v}
 	&= \frac{\partial}{\partial v} 
 	\left({ \frac{1}{2} \sum_{i=1}^{n} \left(y^{(i)} - v\right)^2}\right) && \text{代入$E_\theta$}
 	\\\\
@@ -81,7 +82,77 @@ $$
 \end{align*}
 $$
 
----
+然后是第二部分：
+$$
+\begin{align*}
+\frac{\partial v}{\partial\theta_{0}}=\frac{\partial}{\partial\theta_{0}}(\theta_{0}+\theta_{1}x)=1
+\\\\
+\frac{\partial v}{\partial\theta_{1}}=\frac{\partial}{\partial\theta_{1}}(\theta_{0}+\theta_{1}x)=x
+\end{align*}
+$$
 
 # 多项式回归
 
+增加函数中多项式的次数,然后再使用函数的分析方法被称为多项式回归：
+$$
+f_\theta(x) = \theta_0 + \theta_1x + \theta_2x^2 + \dots + \theta_nx^n
+$$
+偏导数对应更新就好了：
+$$
+\theta_n := \theta_n - \eta\frac{\partial u}{\partial\theta_n}
+$$
+
+# 多重回归
+
+与多项式回归**增加变量的幂次数**不同，多重回归描述的是**包含多个变量**的回归场景。
+$$
+f_\theta(x_1, \dots ,x_n) = \theta_0 + \theta_1 x_1 + \dots + \theta_n x_n
+$$
+然后使用一点列向量：
+$$
+\boldsymbol\theta=
+\begin{bmatrix}
+	\theta_{0} \\\\
+	\theta_{1} \\\\
+	\theta_{2} \\\\
+	\vdots     \\\\
+	\theta_{n}
+\end{bmatrix}
+,\quad
+\boldsymbol x=
+\begin{bmatrix}
+	x_{0}  \\\\
+	x_{1}  \\\\
+	x_{2}  \\\\
+	\vdots \\\\
+	x_{n}
+\end{bmatrix}\quad(x_{0}=1)
+$$
+那么：
+$$f_{\theta}(\boldsymbol x)=\boldsymbol\theta^\top \boldsymbol x$$
+
+算偏导数也是一样的，用链式法则，只需要重新算一下第二部分：
+$$
+\begin{align*}
+	\frac{\partial v}{\partial\theta_{j} }
+	&=\frac{\partial}{\partial\theta_{j} }(\boldsymbol \theta^{\top} \boldsymbol x)
+	\\\\
+	&=\frac{\partial}{\partial\theta_{j} }(\theta_{0}x_{0}+\theta_{1}x_{1}+\cdot\cdot\cdot+\theta_{n}x_{n})
+	\\\\
+	&=x_j
+	\\\\
+	\theta_{j} & := \theta_{j}-\eta\sum_{i=1}^{n}\left(f_{\theta}(\boldsymbol x^{(i)})-y^{(i)}\right)x_{j}^{(i)}
+\end{align*}
+$$
+
+# 随机梯度下降法
+
+用最速下降法来找函数的最小值时，选用随机数作为初始值的情况比较多。不过这样每次初始值都会变，进而导致陷入局部最优解的问题。
+![alt text](2025-08-15-math-in-dl-in-plain-02/image.png)
+
+而在随机梯度下降法中会随机选择 $m$ 个训练数据，并使用它来更新参数：
+$$
+\theta_{j}:=\theta_{j}-\eta\sum_{k\in K}\left(f_{\theta}(\boldsymbol x^{(k)})-y^{(k)}\right)x_{j}^{(k)}
+$$
+
+这种做法被称为 **小批量（mini-batch）** 梯度下降法。

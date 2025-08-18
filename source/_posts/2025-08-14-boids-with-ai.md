@@ -1,5 +1,6 @@
 ---
 title: Boids with AI
+draft: true
 mathjax: false
 categories:
     - game-developing
