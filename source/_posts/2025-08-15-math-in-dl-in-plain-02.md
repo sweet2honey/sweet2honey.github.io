@@ -1,6 +1,6 @@
 ---
 title: 白话机器学习的数学 - 2 Regression
-mathjax: true
+# mathjax: true
 toc: true
 categories:
   - machine-learning
@@ -52,11 +52,11 @@ $$
 
 发现 $u(\theta)$ 不是对 $\theta$ 的直接函数，可以考虑使用**复合函数**的微分法则，假设：
 $$
-\begin{align*}
+\begin{aligned}
 u=E(\theta)
 \\
 v=f_\theta(x)
-\end{align*}
+\end{aligned}
 $$
 则有：
 $$
@@ -66,29 +66,23 @@ $$
 先求第一部分的导数：
 
 $$
-\begin{align*}
-	\frac{\partial u}{\partial v}
-	&= \frac{\partial}{\partial v} 
-	\left({ \frac{1}{2} \sum_{i=1}^{n} \left(y^{(i)} - v\right)^2}\right) && \text{代入$E_\theta$}
-	\\
-	&={ \frac{1}{2} \sum _{i=1}^{n} \left(
-	{ \frac{\partial u}{\partial v} \left(y^{(i)} - v\right)^2} \right)} && \text{微分分配律}
-	\\
-	  & ={\frac{1}{2} \sum _{i=1}^{n} \left({\frac{\partial u}{\partial v} \left({y^{(i)}}^2 -2y^{(i)}v +v^2\right)} \right)} && \text{展开平方} 
-	\\
-	  & ={\frac{1}{2} \sum _{i=1}^{n} \left(-2y^{(i)} + 2v \right) }                                                          && \text{对$v$求导}   
-	\\
-	  & ={\sum _{i=1}^{n} \left(v - y^{(i)}\right)}                                                                           && \text{常量提取} 
-\end{align*}
+\begin{aligned}
+	\frac{\partial u}{\partial v} \\
+	& = \frac{\partial}{\partial v}\left({ \frac{1}{2} \sum_{i=1}^{n} \left(y^{(i)} - v\right)^2}\right)                    &  & \impliedby 代入E_{\theta} \\
+	& ={ \frac{1}{2} \sum _{i=1}^{n} \left( { \frac{\partial u}{\partial v} \left(y^{(i)} - v\right)^2} \right)}            &  & \impliedby 微分分配律        \\
+	& ={\frac{1}{2} \sum _{i=1}^{n} \left({\frac{\partial u}{\partial v} \left({y^{(i)}}^2 -2y^{(i)}v +v^2\right)} \right)} &  & \impliedby 展开平方         \\
+	& ={\frac{1}{2} \sum _{i=1}^{n} \left(-2y^{(i)} + 2v \right) }                                                          &  & \impliedby 对v求导         \\
+	& ={\sum _{i=1}^{n} \left(v - y^{(i)}\right)}                                                                           &  & \impliedby 常量提取
+\end{aligned}
 $$
 
 然后是第二部分：
 $$
-\begin{align*}
+\begin{aligned}
 \frac{\partial v}{\partial\theta_{0}}=\frac{\partial}{\partial\theta_{0}}(\theta_{0}+\theta_{1}x)=1
 \\
 \frac{\partial v}{\partial\theta_{1}}=\frac{\partial}{\partial\theta_{1}}(\theta_{0}+\theta_{1}x)=x
-\end{align*}
+\end{aligned}
 $$
 
 # 多项式回归
@@ -133,7 +127,7 @@ $$f_{\theta}(\bm{x})=\bm{\theta}^\top \bm{x}$$
 
 算偏导数也是一样的，用链式法则，只需要重新算一下第二部分：
 $$
-\begin{align*}
+\begin{aligned}
 	\frac{\partial v}{\partial\theta_{j} }
 	&=\frac{\partial}{\partial\theta_{j} }(\bm{\theta}^{\top} \bm{x})
 	\\
@@ -142,7 +136,7 @@ $$
 	&=x_j
 	\\
 	\theta_{j} & := \theta_{j}-\eta\sum_{i=1}^{n}\left(f_{\theta}(\bm{x}^{(i)})-y^{(i)}\right)x_{j}^{(i)}
-\end{align*}
+\end{aligned}
 $$
 
 # 随机梯度下降法
