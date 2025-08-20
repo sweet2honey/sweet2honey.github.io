@@ -8,12 +8,13 @@ subtitle: "There are good days and there are bad days"
 description: ""
 keywords:
 author: Henry Wu
-language: en
+language: zh-CN
 timezone: "Asia/Shanghai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://sweet2honey.github.io/
+url: https://henrywu.netlify.app/
+# url: https://sweet2honey.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -131,7 +132,7 @@ all_minifier: false
 
 feed:
   content_limit: 50
-  content_limit_delim: '。'
+  content_limit_delim: "。"
 
 search:
   path: search.xml
@@ -141,7 +142,7 @@ search:
 markdown_it_plus:
   plugins:
     - plugin:
-        name: '@iktakahiro/markdown-it-katex'
+        name: "@iktakahiro/markdown-it-katex"
         enable: true
         options:
           strict: false
