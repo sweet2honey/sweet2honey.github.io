@@ -45,11 +45,12 @@ relative_link: false
 future: true
 syntax_highlighter: highlight.js
 highlight:
-  line_number: false
+  enable: true # maupassant
+  line_number: true
   auto_detect: false
-  tab_replace: ""
+  tab_replace:
   wrap: false
-  hljs: true
+  # hljs: true
 prismjs:
   preprocess: true
   line_number: true
@@ -131,6 +132,11 @@ all_minifier: false
 feed:
   content_limit: 50
   content_limit_delim: '。'
+
+search:
+  path: search.xml
+  field: post
+  content: true
 
 markdown_it_plus:
   plugins:
