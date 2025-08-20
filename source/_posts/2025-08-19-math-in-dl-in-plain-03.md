@@ -5,6 +5,7 @@ toc: true
 categories:
   - machine-learning
 tags:
+  - ml
 date: 2025-08-19 10:47:19
 description:
   分类：逻辑回归是一种用于解决分类问题（主要是二分类）的统计学习方法。它并不直接预测类别标签（如0或1），而是预测一个样本属于某个类别的概率。
@@ -202,7 +203,7 @@ $$
 \\
 &=
 \sum_{i=1}^{n}\left(\frac{y^{(i)}}{v} - \frac{1-y^{(i)}}{1-v} \right)
-&& \impliedby \log (x) = \frac{1}{x}, \text{notice the minus sign in $-v$}
+&& \impliedby \log (x) = \frac{1}{x}, 注意 -v 中的负号
 \end{aligned}
 $$
 

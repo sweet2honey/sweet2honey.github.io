@@ -149,15 +149,15 @@ info:
       message: RSS
 
 links:
-  - title: site-name1
+  - title:
     url: http://www.example1.com/
     src: https://www.example1.com/favicon.ico
     desc: XXX's Blog
-  - title: site-name2
+  - title:
     url: http://www.example2.com/
     src: https://www.example1.com/favicon.ico
     desc: YYY's Blog
-  - title: site-name3
+  - title:
     url: http://www.example3.com/
     src: https://www.example3.com/favicon.ico
     desc: ZZZ's Blog
