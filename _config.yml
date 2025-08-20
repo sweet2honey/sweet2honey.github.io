@@ -131,3 +131,11 @@ all_minifier: false
 feed:
   content_limit: 50
   content_limit_delim: '。'
+
+markdown_it_plus:
+  plugins:
+    - plugin:
+        name: '@iktakahiro/markdown-it-katex'
+        enable: true
+        options:
+          strict: false
