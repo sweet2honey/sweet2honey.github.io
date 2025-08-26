@@ -3,7 +3,7 @@ title: Elements of Design
 mathjax: false
 toc: true
 categories:
-    - design
+    - Design
 tags:
     - coding
 date: 2024-11-30 23:39

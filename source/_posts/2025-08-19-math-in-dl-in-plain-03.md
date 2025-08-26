@@ -3,7 +3,7 @@ title: 白话机器学习的数学 - 3 Classification
 # mathjax: true
 toc: true
 categories:
-  - machine-learning
+  - Machine Learning
 tags:
   - ml
 date: 2025-08-19 10:47:19

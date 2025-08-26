@@ -2,7 +2,7 @@
 title: 白话机器学习的数学 - 1 Basics
 mathjax: false
 categories:
-    - machine-learning
+    - Machine Learning
 tags:
     - ml
 date: 2025-08-15 11:45:59
@@ -29,16 +29,15 @@ description:
 使用有标签的数据进行的学习称为**有监督学习**，与之相反，使用没有标签的数据进行的学习称为**无监督学习**。
 生成模型的训练通常以无监督或自监督为核心，但实际应用时可能引入监督信号以提升可控性。
 
-```mermaid
-graph LR
-    ml[Machine Learning]
-    sl[Supervised learning]
-    usl[Unsupervised learning]
-    ml --> sl
-    ml --> usl
-    sl --> 回归
-    sl --> 分类
-    sl -.-> 生成
-    usl --> 聚类
-    usl -.-> 生成
+```plantuml
+@startmindmap
+* Machine Learning
+    * Supervised learning
+        * Regression
+        * Classification
+        *[#lightgreen] Generating
+    * Unsupervised learning
+        *[#lightgreen] Generating
+        * Clustering
+@endmindmap
 ```

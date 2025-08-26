@@ -102,10 +102,10 @@ post_content_length: 120 ## Set the length of the post summary displayed on home
 icp: ## China mainland only, show icp info at the bottom.
 
 menu:
-  - page: 主页
+  - page: About
     directory: index/
     icon: fa-home
-  - page: 文章
+  - page: Archives
     directory: archives/
     icon: fa-inbox
   - page: Tags

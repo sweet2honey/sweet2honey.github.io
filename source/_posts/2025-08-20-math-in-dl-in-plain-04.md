@@ -3,7 +3,7 @@ title: 白话机器学习的数学 - 4 Evaluation
 mathjax: false
 toc: true
 categories:
-  - machine-learning
+  - Machine Learning
 tags:
 date: 2025-08-20 15:55:40
 description:

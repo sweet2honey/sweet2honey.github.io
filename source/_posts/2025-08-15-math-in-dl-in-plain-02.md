@@ -3,7 +3,7 @@ title: 白话机器学习的数学 - 2 Regression
 # mathjax: true
 toc: true
 categories:
-  - machine-learning
+  - Machine Learning
 tags:
   - ml
 date: 2025-08-15 14:53:23

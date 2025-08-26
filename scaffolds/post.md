@@ -4,11 +4,12 @@ date: {{ date }}
 mathjax: false
 toc: true
 categories:
-    - programming
-    - watercooler
-    - machine-learning
-    - deep-learning
-    - game-developing
+    - Programming
+    - Watercooler
+    - Machine Learning
+    - Deep Learning
+    - Game Developing
+    - Weekly
 tags:
     - cpp
 description:

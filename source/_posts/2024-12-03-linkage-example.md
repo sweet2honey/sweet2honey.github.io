@@ -3,7 +3,7 @@ title: linkage example
 mathjax: false
 date: 2024-12-03 16:49:42
 categories:
-    - programming
+    - Programming
 tags:
     - compiler
     - linkage

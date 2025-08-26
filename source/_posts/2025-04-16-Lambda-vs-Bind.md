@@ -3,7 +3,7 @@ title: Lambda vs Bind
 mathjax: false
 toc: true
 categories:
-    - programming
+    - Programming
 tags:
     - cpp
     - lambda
