@@ -103,8 +103,8 @@ icp: ## China mainland only, show icp info at the bottom.
 
 menu:
   - page: About
-    directory: index/
-    icon: fa-home
+    directory: about/
+    icon: fa-user
   - page: Archives
     directory: archives/
     icon: fa-inbox

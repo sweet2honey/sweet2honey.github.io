@@ -1,17 +1,19 @@
 ---
-title: about
-date: 2025-07-30 11:36:59
+title: About
+date: 2025-07-30 11:25:56
+layout: page
 ---
-# ℹ️ Info
-[Github](https://github.com/sweet2honey)
 
-# 💼 Occupation
-[2024 - Present] XPeng Motors @ Guangzhou
+Make every day count.
 
-[2021 - 2024] Huawei Technologies Co., Ltd. @ Dongguan
+### Recently
+- Linear Algebra
+- Machine Learning
 
-[2019 - 2021] Deloitte Touche Tohmatsu Limited(DTT) @ Guangzhou
+### Featuring
+- [🌟设计的要素 Elements of Design](/2024/11/30/elements-of-design)
 
-[2017 - 2018] University of Birmingham(UoB) @ Birmingham
-
-[2014 - 2017] South China University of Technology(SCUT) @ Guangzhou
+### Categories
+- [Programming](/categories/programming)：关于写代码的，语法、编程技巧
+- [Design](/categories/design)：关于设计的，比如架构、API
+- [Watercooler](/categories/watercooler)：饮水机杂谈，工作日常的思考和碎碎念
