@@ -6,7 +6,6 @@ toc: true
 categories:
     - Programming
     - Watercooler
-    - Machine Learning
     - Deep Learning
     - Game Developing
     - Weekly
