@@ -9,6 +9,7 @@ categories:
     - Deep Learning
     - Game Developing
     - Weekly
+    - Reading
 tags:
     - cpp
 description:
